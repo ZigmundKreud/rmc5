@@ -1,4 +1,7 @@
 // Import Modules
+import {RMActorSheet} from "./actor/actor-sheet.js";
+import {RMItemSheet} from "./item/item-sheet.js";
+
 Hooks.once('init', async function () {
 
     // Define custom Entity classes
