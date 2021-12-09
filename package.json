@@ -1,0 +1,20 @@
+{
+  "name": "bol",
+  "version": "1.0.0",
+  "description": "CSS compiler for Rolemaster Classic 5.0 system for Foundry VTT",
+  "scripts": {
+    "css": "gulp css",
+    "watch": "gulp",
+    "gulp": "gulp"
+  },
+  "browserslist": [
+    "last 3 versions"
+  ],
+  "author": "Zigmund",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-less": "^4.0.1"
+  }
+}

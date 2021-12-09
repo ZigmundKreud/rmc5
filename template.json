@@ -1,0 +1,30 @@
+{
+  "Actor": {
+    "types": ["character"],
+    "templates": {
+      "base": {
+        "description": "",
+        "notes": "",
+        "languages": []
+      }
+    },
+    "character": {
+      "templates": ["base"]
+    }
+  },
+  "Item": {
+    "types": ["item"],
+    "templates": {
+      "base": {
+        "subtype" : "default",
+        "description": ""
+      }
+    },
+    "item": {
+      "templates": ["base"],
+      "quantity": 1,
+      "weight": 0
+    }
+  }
+}
+
