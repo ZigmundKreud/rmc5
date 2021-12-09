@@ -2,7 +2,7 @@
  * Extend the basic Item with some very simple modifications.
  * @extends {Item}
  */
-export class BoLItem extends Item {
+export class RMItem extends Item {
   /**
    * Augment the basic Item data model with additional dynamic data.
    */
@@ -35,6 +35,4 @@ export class BoLItem extends Item {
     }
     return props.filter(p => !!p);
   }
-
-
 }

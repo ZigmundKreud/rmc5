@@ -8,8 +8,8 @@ Hooks.once('init', async function () {
     // Register sheet application classes
     Actors.unregisterSheet("core", ActorSheet);
     Items.unregisterSheet("core", ItemSheet);
-    Actors.registerSheet("bol", BoLActorSheet, {makeDefault: true});
-    Items.registerSheet("bol", BoLItemSheet, {makeDefault: true});
+    Actors.registerSheet("rmc5", RMActorSheet, {makeDefault: true});
+    Items.registerSheet("rmc5", RMItemSheet, {makeDefault: true});
 
     // Register System Settings
     registerSystemSettings();

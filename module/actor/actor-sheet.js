@@ -23,39 +23,39 @@ export class RMActorSheet extends ActorSheet {
     // Everything below here is only needed if the sheet is editable
     if (!this.options.editable) return;
 
-    // Add Inventory Item
-    html.find('.item-create').click(this._onItemCreate.bind(this));
-
-    // Update Inventory Item
-    html.find('.item-edit').click(ev => {
-      const li = $(ev.currentTarget).parents(".item");
-      const item = this.actor.items.get(li.data("itemId"));
-      item.sheet.render(true);
-    });
-    html.find('.roll-attribute').click(ev => {
-      this.actor.rollAttributeAptitude( $(ev.currentTarget).data("attr-key") );
-    });
-    html.find('.roll-career').click(ev => {
-      const li = $(ev.currentTarget).parents(".item");
-      this.actor.rollCareer( li.data("itemId") );
-    });
-    html.find('.roll-weapon').click(ev => {
-      const li = $(ev.currentTarget).parents(".item");
-      this.actor.rollWeapon( li.data("itemId") );
-    });
-
-    // Equip/Unequip item
-    html.find('.item-equip').click(this._onToggleEquip.bind(this));
-
-    // Delete Inventory Item
-    html.find('.item-delete').click(ev => {
-      const li = $(ev.currentTarget).parents(".item");
-      this.actor.deleteEmbeddedDocuments("Item", [li.data("itemId")])
-      li.slideUp(200, () => this.render(false));
-    });
-
-    // Rollable abilities.
-    html.find('.rollable').click(this._onRoll.bind(this));
+    // // Add Inventory Item
+    // html.find('.item-create').click(this._onItemCreate.bind(this));
+    //
+    // // Update Inventory Item
+    // html.find('.item-edit').click(ev => {
+    //   const li = $(ev.currentTarget).parents(".item");
+    //   const item = this.actor.items.get(li.data("itemId"));
+    //   item.sheet.render(true);
+    // });
+    // html.find('.roll-attribute').click(ev => {
+    //   this.actor.rollAttributeAptitude( $(ev.currentTarget).data("attr-key") );
+    // });
+    // html.find('.roll-career').click(ev => {
+    //   const li = $(ev.currentTarget).parents(".item");
+    //   this.actor.rollCareer( li.data("itemId") );
+    // });
+    // html.find('.roll-weapon').click(ev => {
+    //   const li = $(ev.currentTarget).parents(".item");
+    //   this.actor.rollWeapon( li.data("itemId") );
+    // });
+    //
+    // // Equip/Unequip item
+    // html.find('.item-equip').click(this._onToggleEquip.bind(this));
+    //
+    // // Delete Inventory Item
+    // html.find('.item-delete').click(ev => {
+    //   const li = $(ev.currentTarget).parents(".item");
+    //   this.actor.deleteEmbeddedDocuments("Item", [li.data("itemId")])
+    //   li.slideUp(200, () => this.render(false));
+    // });
+    //
+    // // Rollable abilities.
+    // html.find('.rollable').click(this._onRoll.bind(this));
   }
 
   /* -------------------------------------------- */
