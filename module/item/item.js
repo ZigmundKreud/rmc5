@@ -11,7 +11,7 @@ export class RMItem extends Item {
     // console.debug("Item prepareData");
     // Get the Item's data
     const itemData = this.data;
-    // console.log(itemData);
+    console.log(itemData);
     const actorData = this.actor ? this.actor.data : {};
     const data = itemData.data;
   }

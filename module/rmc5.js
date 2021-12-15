@@ -1,45 +1,43 @@
 // Import Modules
 import {RMActorSheet} from "./actor/actor-sheet.js";
 import {RMItemSheet} from "./item/item-sheet.js";
+import {RMActor} from "./actor/actor.js";
+import {RMItem} from "./item/item.js";
+import {registerSystemSettings} from "./system/settings.js";
+import {preloadHandlebarsTemplates} from "./system/templates.js";
+import {registerHandlebarsHelpers} from "./system/helpers.js";
+import registerHooks from "./system/hooks.js";
+import {RM} from "./system/config.js";
 
 Hooks.once('init', async function () {
 
-    // Define custom Entity classes
-    CONFIG.Actor.documentClass = BoLActor;
-    CONFIG.Item.documentClass = BoLItem;
+    game.rmc5 = {
+        config:RM
+    };
 
+    /**
+     * Set an initiative formula for the system
+     * @type {String}
+     */
+    // formula: "2d10+@attributes.mind.value+@aptitudes.init.value",
+    CONFIG.Combat.initiative = {
+        formula: "2d10",
+        decimals: 0
+    };
+
+    // Define custom Entity classes
+    CONFIG.Actor.documentClass = RMActor;
+    CONFIG.Item.documentClass = RMItem;
     // Register sheet application classes
     Actors.unregisterSheet("core", ActorSheet);
     Items.unregisterSheet("core", ItemSheet);
     Actors.registerSheet("rmc5", RMActorSheet, {makeDefault: true});
     Items.registerSheet("rmc5", RMItemSheet, {makeDefault: true});
-
     // Register System Settings
     registerSystemSettings();
-
-    // Preload Handlebars Templates
     await preloadHandlebarsTemplates();
-
-    // Register Handlebars helpers
     registerHandlebarsHelpers();
-
-    // Register hooks
     registerHooks();
-
-    // // If you need to add Handlebars helpers, here are a few useful examples:
-    // Handlebars.registerHelper('concat', function() {
-    //   var outStr = '';
-    //   for (var arg in arguments) {
-    //     if (typeof arguments[arg] != 'object') {
-    //       outStr += arguments[arg];
-    //     }
-    //   }
-    //   return outStr;
-    // });
-    //
-    // Handlebars.registerHelper('toLowerCase', function(str) {
-    //   return str.toLowerCase();
-    // });
 });
 
 

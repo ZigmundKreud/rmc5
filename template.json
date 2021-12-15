@@ -1,29 +1,273 @@
 {
   "Actor": {
-    "types": ["character"],
+    "types": [
+      "character"
+    ],
     "templates": {
       "base": {
         "description": "",
         "notes": "",
-        "languages": []
+        "languages": [
+          {
+            "name": "",
+            "written": 0,
+            "spoken": 0
+          }
+        ],
+        "stats": [
+          {
+            "key": "co",
+            "label": "RM.stats.co",
+            "temp": 0,
+            "potential": 0,
+            "bonus": 0,
+            "race": 0,
+            "spec": 0,
+            "total": 0,
+            "dp": 0
+          },
+          {
+            "key": "ag",
+            "label": "RM.stats.ag",
+            "temp": 0,
+            "potential": 0,
+            "bonus": 0,
+            "race": 0,
+            "spec": 0,
+            "total": 0,
+            "dp": 0
+          },{
+            "key" : "sd",
+            "label": "RM.stats.sd",
+            "temp": 0,
+            "potential": 0,
+            "bonus": 0,
+            "race": 0,
+            "spec": 0,
+            "total": 0,
+            "dp": 0
+          },{
+            "key" : "re",
+            "label": "RM.stats.re",
+            "temp": 0,
+            "potential": 0,
+            "bonus": 0,
+            "race": 0,
+            "spec": 0,
+            "total": 0,
+            "dp": 0
+          },{
+            "key" : "me",
+            "label": "RM.stats.me",
+            "temp": 0,
+            "potential": 0,
+            "bonus": 0,
+            "race": 0,
+            "spec": 0,
+            "total": 0,
+            "dp": 0
+          },{
+            "key" : "st",
+            "label": "RM.stats.st",
+            "temp": 0,
+            "potential": 0,
+            "bonus": 0,
+            "race": 0,
+            "spec": 0,
+            "total": 0,
+            "dp": 0
+          },{
+            "key" : "qu",
+            "label": "RM.stats.qu",
+            "temp": 0,
+            "potential": 0,
+            "bonus": 0,
+            "race": 0,
+            "spec": 0,
+            "total": 0,
+            "dp": 0
+          },{
+            "key" : "pr",
+            "label": "RM.stats.pr",
+            "temp": 0,
+            "potential": 0,
+            "bonus": 0,
+            "race": 0,
+            "spec": 0,
+            "total": 0,
+            "dp": 0
+          },{
+            "key" : "in",
+            "label": "RM.stats.in",
+            "temp": 0,
+            "potential": 0,
+            "bonus": 0,
+            "race": 0,
+            "spec": 0,
+            "total": 0,
+            "dp": 0
+          },{
+            "key" : "em",
+            "label": "RM.stats.em",
+            "temp": 0,
+            "potential": 0,
+            "bonus": 0,
+            "race": 0,
+            "spec": 0,
+            "total": 0,
+            "dp": 0
+          }
+        ],
+        "skills": [],
+        "resources": {
+          "hp": {
+            "current": 0,
+            "total": 0
+          },
+          "pp": {
+            "current": 0,
+            "total": 0
+          },
+          "treasure": {
+            "mp": 0,
+            "pp": 0,
+            "gp": 0,
+            "sp": 0,
+            "bp": 0,
+            "cp": 0,
+            "tp": 0,
+            "other": 0
+          }
+        }
       }
     },
     "character": {
-      "templates": ["base"]
+      "templates": [
+        "base"
+      ]
     }
   },
   "Item": {
-    "types": ["item"],
+    "types": ["item", "feature" ,"skill", "spellList" ],
     "templates": {
       "base": {
-        "subtype" : "default",
+        "subtype": "default",
         "description": ""
       }
     },
-    "item": {
-      "templates": ["base"],
+    "feature" : {
+      "templates": [
+        "base"
+      ],
+      "properties" : {
+        "profession": {
+          "label" : "RM.feature.profession",
+          "enabled" : false
+        },
+        "race": {
+          "label" : "RM.feature.race",
+          "enabled" : false,
+          "statBonus" : {
+            "st" : 0,
+            "qu" : 0,
+            "pr" : 0,
+            "in" : 0,
+            "em" : 0,
+            "co" : 0,
+            "ag" : 0,
+            "sd" : 0,
+            "me" : 0,
+            "re" : 0
+          },
+          "rrMod" : {
+            "essence" : 0,
+            "channeling" : 0,
+            "mentalism" : 0,
+            "poison" : 0,
+            "disease" : 0
+          },
+          "soulDeparture" : 0,
+          "statDeterioration" : 0,
+          "recoveryFactor" : 0,
+          "lang" : 0,
+          "diceType" : "-",
+          "maxHits" : 0
+        },
+        "background": {
+          "label" : "RM.feature.profession",
+          "enabled" : false
+        }
+      }
+    },
+    "item" : {
+      "templates": [
+        "base"
+      ],
       "quantity": 1,
-      "weight": 0
+      "weight": 0,
+      "price" : 0,
+      "properties" : {
+        "armor": {
+          "label" : "RM.property.armor",
+          "enabled" : false,
+          "armorType" : 0,
+          "category" : "",
+          "defensiveBonus" : 0
+        },
+        "shield": {
+          "label" : "RM.property.shield",
+          "enabled" : false,
+          "parryVsMelee" : 0,
+          "parryVsMissile" : 0,
+          "parryLimitation" : "",
+          "defensiveBonus" : 0
+        },
+        "weapon": {
+          "label" : "RM.property.weapon",
+          "enabled" : false,
+          "weaponCategory" : "",
+          "length" : "",
+          "offensiveBonus" : 0,
+          "fumble" : null,
+          "rangeModifiers" : [0,0,0,0,0],
+          "hands" : 1,
+          "tableUsed" : null,
+          "armorModifications" : [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+          "special" : ""
+        }
+      }
+    },
+    "skill": {
+      "name" : "RM.skill.newSkill",
+      "cost1": null,
+      "cost2": null,
+      "star" : false,
+      "rank": 0,
+      "rankBonus": -25,
+      "statBonus": 0,
+      "levelBonus": 0,
+      "item": 0,
+      "special1": 0,
+      "special2": 0,
+      "misc": 0,
+      "total": 0
+    },
+    "spellList": {
+      "name" : "RM.spell.newSpellList",
+      "level": 0,
+      "chance": 0,
+      "description": "",
+      "spells": [
+        {
+          "name" : "RM.spell.newSpell",
+          "level": 0,
+          "description": "",
+          "aoe" : "",
+          "duration" : "",
+          "range" : "",
+          "type" : ""
+        }
+      ]
     }
   }
 }
