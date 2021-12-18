@@ -8,11 +8,13 @@ import {preloadHandlebarsTemplates} from "./system/templates.js";
 import {registerHandlebarsHelpers} from "./system/helpers.js";
 import registerHooks from "./system/hooks.js";
 import {RM} from "./system/config.js";
+import {TABLES} from "./tables/weapons/tables.js";
 
 Hooks.once('init', async function () {
 
     game.rmc5 = {
-        config:RM
+        config:RM,
+        tables:TABLES
     };
 
     /**
