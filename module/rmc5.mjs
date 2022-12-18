@@ -1,20 +1,20 @@
 // Import Modules
-import {RMActorSheet} from "./actor/actor-sheet.js";
-import {RMItemSheet} from "./item/item-sheet.js";
-import {RMActor} from "./actor/actor.js";
-import {RMItem} from "./item/item.js";
-import {registerSystemSettings} from "./system/settings.js";
-import {preloadHandlebarsTemplates} from "./system/templates.js";
-import {registerHandlebarsHelpers} from "./system/helpers.js";
-import registerHooks from "./system/hooks.js";
-import {RM} from "./system/config.js";
-import {TABLES} from "./tables/weapons/tables.js";
+import {RMActorSheet} from "./actor/actor-sheet.mjs";
+import {RMItemSheet} from "./item/item-sheet.mjs";
+import {RMActor} from "./actor/actor.mjs";
+import {RMItem} from "./item/item.mjs";
+import {registerSystemSettings} from "./system/settings.mjs";
+import {preloadHandlebarsTemplates} from "./system/templates.mjs";
+import {registerHandlebarsHelpers} from "./system/helpers.mjs";
+import registerHooks from "./system/hooks.mjs";
+import {RM} from "./system/config.mjs";
+import {Tables} from "./tables/weapons/tables.mjs";
 
 Hooks.once('init', async function () {
 
     game.rmc5 = {
         config:RM,
-        tables:TABLES
+        tables:Tables
     };
 
     /**
@@ -48,6 +48,6 @@ Hooks.once('init', async function () {
  */
 
 Hooks.once("ready", async () => {
-    console.debug("Importing data");
-    console.info("System Initialized.");
+    // console.debug("Importing data");
+    // console.info("System Initialized.");
 });

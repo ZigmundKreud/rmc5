@@ -1,6 +1,101 @@
 @import "flex";
-//@import "forms";
 //@import "typography";
+//:root {
+//  --font-primary: serif;
+//}
+@boxsize : 9px;
 
-.rmc5.sheet.actor {}
-.rmc5.sheet.item {}
+.rmc5 {
+  @import "colors";
+  @import "typography";
+  @import "form-reset";
+  &.sheet {
+    &.actor {
+      min-width: 860px;
+      //max-width: 1050px;
+      .window-header {}
+      .window-content {
+        form.editable {
+          .sheet-body {
+            .main {
+              font-size: var(--font-size-12);
+              .stats-list {
+                .stats-header-row {
+                  font-weight: bold;
+                  margin-bottom:3px;
+                }
+                .stat {
+                  height:27px;
+                  .stat-name, .stat-abbr {
+                    padding-top:6px;
+                  }
+                  .field-value {
+                    text-align: center;
+                    display: flex;
+                    flex: 1;
+                    //width: 30px;
+                    //max-width: 30px;
+                    background:rgba(0,0,0,0.1);
+                    border: none;
+                    border-radius: 0;
+
+                    &:read-only{
+                      background:transparent;
+                    }
+                  }
+                }
+              }
+              .skills-list {
+                min-width: 800px;
+                .skills-header {
+                  font-weight: bold;
+                  margin-bottom:3px;
+                  .skill-rank {
+                    min-width : 280px;
+                  }
+                }
+                .skill {
+                  height:20px;
+                  .skill-rank {
+                    cursor: pointer;
+                    .square {
+                      float: left;
+                      margin:0 1px 0 0;
+                      padding:0;
+                      overflow: hidden;
+                      height:@boxsize;
+                      min-height:@boxsize;
+                      max-height:@boxsize;
+                      width:@boxsize;
+                      min-width:@boxsize;
+                      max-width:@boxsize;
+                      box-shadow: 1px 1px 3px black;
+                      background:transparent;
+                      border: 1px solid black;
+                      &.spacer {
+                        background:transparent;
+                        border:none;
+                        box-shadow: none;
+                        width:calc(@boxsize/2);
+                        min-width:calc(@boxsize/2);
+                        max-width:calc(@boxsize/2);
+                      }
+                      &.checked {
+                        background:black;
+                      }
+                    }
+                    min-width : 280px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    &.item {}
+  }
+  &.dialog {
+
+  }
+}

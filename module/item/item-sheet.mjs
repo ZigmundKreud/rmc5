@@ -7,7 +7,7 @@ export class RMItemSheet extends ItemSheet {
   static get defaultOptions() {
     return mergeObject(super.defaultOptions, {
       classes: ["rmc5", "sheet", "item"],
-      template: "systems/rmc5/templates/item/item-sheet.hbs",
+      template: "systems/rmc5/templates/items/item-sheet.hbs",
       width: 520,
       height: 480,
       tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "description" }]
@@ -17,6 +17,8 @@ export class RMItemSheet extends ItemSheet {
   /** @override */
   getData(options) {
     const objectData = super.getData(options);
+    objectData.system = this.item.system;
+    objectData.config = game.rmc5.config;
     return objectData;
   }
   /* -------------------------------------------- */

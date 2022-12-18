@@ -1,0 +1,54 @@
+Skills	Stats	Fighter	Thief	Rogue	War.Mnk	Magician	Illusionist	Alchemist	Cleric	Animist	Healer
+Maneuvering	in	Armor
+Soft	Leather	Ag/St	1/*	1/*	1/*	9	9	9	9	1/*	2/*	2/*
+Rigid	Leather	Ag/St	1/*	2/*	1/*	9	9	9	9	2/*	3/*	3/*
+Chain	Ag/St	2/*	3/*	2/*	10	10	10	10	10	10	10
+Plate	Ag/St	2/*	4/*	3/*	10	11	11	11	11	11	11
+Weapon	Skills*
+One-Handed	Edged**	St/St/Ag	1/5	2/7	2/5	4	9	9	9	6	6	9
+One-Handed	Crushing**	St/St/Ag	2/5	3/8	3/8	6	20	20	20	7	7	20
+Two-Handed**	St/St/Ag	2/7	4	3/9	8	20	20	20	9	9	20
+Missile**	Ag/Ag/St	2/7	4	3/9	8	20	20	20	9	9	20
+Thrown**	Ag/Ag/St	2/7	4	3/6	8	20	20	20	9	9	20
+Pole	Arms**	St/St/Ag	5	6	6	15	20	20	20	20	20	20
+General	Skills
+Climbing	Ag	3/7	2/5	3/7	3/7	6	7	7	5	4	6
+Swimming	Ag	2/6	1/3	2/5	1/5	3	3	3	3	3	3
+Riding**	Em/Ag	2/6	2/6	2/5	2/7	3	3	3	3	1/3	3
+Disarm	Traps	In/Ag	3/8	1/3	2/5	3/9	7	8	4	7	8	8
+Pick	Locks	In/Ag	3/9	1/3	2/6	3/9	8	8	4	8	8	8
+Stalk	&	Hide	Ag	or	SD	2/5	1/3	1/3	2/4	5	3	6	5	3	6
+Perception	In/Re	2/5	1/3	1/3	2/5	3	2	3	3	3	3
+Magical	Skills
+Spell	Lists**	Em	or	In	20	10	8	10	2/*	2/*	2/*	2/*	2/*	2/*
+Runes	Em/In	7	6	6	6	1/4	1/4	1/3	2/5	2/6	2/6
+Staves	&	Wands	Em/In	9	7	8	9	1/4	1/4	1/3	2/5	2/6	3/7
+Directed	Spells**	Ag	20	20	20	20	2/5	2/6	2/7	2/6	3	3
+Special	Skills
+Ambush	—	3/8	1/3	2/5	3/9	9	5	9	9	6	9
+Linguistics**	—	3/*	3/*	3/*	3/*	2/*	1/*	1/*	2/*	2/*	2/*
+Adrenal	Moves**	Pr/SD	2/6	2/6	2/6	1/3	6	6	6	5	6	5
+Adrenal	Defense	—	20	20	20	3/7	20	20	20	20	20	20
+Martial	Arts	**	varies	3/7	3/7	3/7	1/3	9	9	9	6	9	6
+Body	Development	Co	1/3	3/7	2/5	2/7	8	8	6	4	4	1/3
+Secondary	Skills
+Acrobatics	Ag/Qu	2/5	1/3	1/4	1/3	3	3	3	2/7	2/7	2/7
+Acting	Pr/Em	2/6	2/5	1/3	2/5	3/6	1/3	3/6	2/7	2/7	2/7
+Crafting**	Ag/Em	2/6	2/6	2/6	3/5	3	3	1/3	3	3	3
+Diplomacy	Pr/In	3/6	3/6	2/6	2/6	2/4	2/5	2/5	2/4	2/6	2/6
+Duping	Pr/Em	2/6	1/4	1/5	3/6	3/6	2/4	3/6	3/6	3/6	3/6
+First	Aid	SD/Em	2/6	2/6	2/6	2/6	2/6	2/6	2/5	1/5	1/5	1/2
+Foraging	In/Me	2/6	2/6	2/5	2/6	2/6	2/7	2/5	2/5	1/5	2/5
+Frenzy	Em/SD	2/6	2/6	2/6	2/5	5	5	6	3	3	3
+Herbalism	In/Re	3/8	3/8	3/6	2/4	3/8	3/8	3/8	2/6	1/3	2/4
+Lore:	General**	Me/Re	1/3	1/3	1/3	1/3	1/3	1/3	1/3	1/3	1/3	1/3
+Lore:	Magical**	Me/Re	6	5	4	6	1/4	1/4	1/4	2/4	2/5	2/5
+Lore:	Obscure**	Me/Re	3/7	3/7	3/7	3/7	3/7	3/7	3/7	3/7	3/7	3/7
+Meditation	Pr/SD	3/7	3/6	3/6	2/4	1/5	2/4	2/4	1/2	1/3	1/2
+Music	Ag/Em	2/6	2/6	2/6	2/6	2/6	2/6	2/6	2/5	2/6	2/6
+Navigation	Re/In	2/6	2/6	2/5	2/6	2/6	2/5	2/6	2/4	1/5	2/4
+Singing	Pr/In	2/6	2/6	2/6	2/6	2/6	2/6	2/6	2/5	2/6	2/6
+Streetwise	In/Pr	2/4	1/2	1/3	3/6	3	3	3	3	4	3
+Tracking	In/Re	1/4	1/3	1/4	1/3	3	3	2	2/6	1/4	3/5
+Trading	Re/Em	3/6	2/4	2/4	3/5	3/5	2/4	3/5	2/5	2/6	2/6
+Trickery	Pr/Qu	2/6	1/2	1/3	1/4	3	1/4	3	3	3	3

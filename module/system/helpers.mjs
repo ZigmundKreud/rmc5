@@ -100,4 +100,19 @@ export const registerHandlebarsHelpers = function () {
         return array.includes(val);
     });
 
+    Handlebars.registerHelper("concat", function (a, b) {
+        return a + b;
+    });
+    Handlebars.registerHelper("sum", function (arr, init) {
+        return arr.reduce((previousValue, currentValue) => previousValue + currentValue, init);
+    });
+    Handlebars.registerHelper("rankdisplay", function (value) {
+        var html = [];
+        for(let i=0; i<25; i++){
+            if(i>0 && i%10==0) html.push("<span class='square spacer'></span>");
+            if(i < value) html.push("<span class='square checked'></span>");
+            else html.push("<span class='square'></span>");
+        }
+        return html.join("");
+    });
 }

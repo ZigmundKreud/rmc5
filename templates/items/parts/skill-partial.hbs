@@ -1,0 +1,161 @@
+<div class="form-group">
+    <label>{{localize "RM.skills.category"}}</label>
+    <div class="form-fields">
+        <select name="system.category" data-type="String" style="width:100%">
+            {{#select system.category}}
+                <option value="">{{localize "RM.ui.none"}}</option>
+                {{#each config.skillCategories as |cat id|}}
+                    <option value="{{cat}}">{{localize (concat "RM.skills.categories." cat)}}</option>
+                {{/each}}
+            {{/select}}
+        </select>
+    </div>
+</div>
+<!-- RANK -->
+<h3 class="form-header">{{localize "RM.skills.rank"}}</h3>
+<div class="form-group">
+    <label>{{localize "RM.skills.rank"}}</label>
+    <div class="cell">
+        <input class="field-value" name="system.rank" type="number" value="{{system.rank}}" data-dtype="Number" />
+    </div>
+</div>
+<div class="form-group">
+    <label>{{localize "RM.skills.rankBonus"}}</label>
+    <div class="cell">
+        <input class="field-value" name="system.rankBonus" type="number" value="{{system.rankBonus}}" data-dtype="Number" />
+    </div>
+</div>
+<!-- COSTS -->
+<h3 class="form-header">{{localize "RM.skills.cost"}}</h3>
+<div class="form-group">
+    <label>{{localize "RM.skills.cost1"}}</label>
+    <div class="cell">
+        <input class="field-value" name="system.cost1" type="number" value="{{system.cost1}}" data-dtype="Number" />
+    </div>
+</div>
+<div class="form-group">
+    <label>{{localize "RM.skills.cost2"}}</label>
+    <div class="cell">
+        <input class="field-value" name="system.cost2" type="number" value="{{system.cost2}}" data-dtype="Number" />
+    </div>
+</div>
+<div class="form-group">
+    <label>{{localize "RM.skills.star"}}</label>
+    <div class="cell">
+        <input type="checkbox" name="system.star" {{checked system.star}} />
+    </div>
+</div>
+<div class="form-group">
+    <label>{{localize "RM.skills.cost"}}</label>
+    <div class="cell">
+        <input class="field-value" name="system.cost" type="text" readonly="true" value="{{system.cost}}" data-dtype="String" />
+    </div>
+</div>
+<!-- STATS -->
+<h3 class="form-header">{{localize "RM.stats.label"}}</h3>
+<div class="form-group">
+    <label>{{localize "RM.skills.stat1"}}</label>
+    <div class="form-fields">
+        <select name="system.stat1" data-type="String" style="width:100%">
+            {{#select system.stat1}}
+                <option value="">{{localize "RM.ui.none"}}</option>
+                <option value="co">{{localize "RM.stats.co"}}</option>
+                <option value="ag">{{localize "RM.stats.ag"}}</option>
+                <option value="sd">{{localize "RM.stats.sd"}}</option>
+                <option value="re">{{localize "RM.stats.re"}}</option>
+                <option value="me">{{localize "RM.stats.me"}}</option>
+                <option value="st">{{localize "RM.stats.st"}}</option>
+                <option value="qu">{{localize "RM.stats.qu"}}</option>
+                <option value="pr">{{localize "RM.stats.pr"}}</option>
+                <option value="in">{{localize "RM.stats.in"}}</option>
+                <option value="em">{{localize "RM.stats.em"}}</option>
+            {{/select}}
+        </select>
+    </div>
+</div>
+<div class="form-group">
+    <label>{{localize "RM.skills.stat2"}}</label>
+    <div class="form-fields">
+        <select name="system.stat2" data-type="String" style="width:100%">
+            {{#select system.stat2}}
+                <option value="">{{localize "RM.ui.none"}}</option>
+                <option value="co">{{localize "RM.stats.co"}}</option>
+                <option value="ag">{{localize "RM.stats.ag"}}</option>
+                <option value="sd">{{localize "RM.stats.sd"}}</option>
+                <option value="re">{{localize "RM.stats.re"}}</option>
+                <option value="me">{{localize "RM.stats.me"}}</option>
+                <option value="st">{{localize "RM.stats.st"}}</option>
+                <option value="qu">{{localize "RM.stats.qu"}}</option>
+                <option value="pr">{{localize "RM.stats.pr"}}</option>
+                <option value="in">{{localize "RM.stats.in"}}</option>
+                <option value="em">{{localize "RM.stats.em"}}</option>
+            {{/select}}
+        </select>
+    </div>
+</div>
+<div class="form-group">
+    <label>{{localize "RM.skills.stat3"}}</label>
+    <div class="form-fields">
+        <select name="system.stat3" data-type="String" style="width:100%">
+            {{#select system.stat3}}
+                <option value="">{{localize "RM.ui.none"}}</option>
+                <option value="co">{{localize "RM.stats.co"}}</option>
+                <option value="ag">{{localize "RM.stats.ag"}}</option>
+                <option value="sd">{{localize "RM.stats.sd"}}</option>
+                <option value="re">{{localize "RM.stats.re"}}</option>
+                <option value="me">{{localize "RM.stats.me"}}</option>
+                <option value="st">{{localize "RM.stats.st"}}</option>
+                <option value="qu">{{localize "RM.stats.qu"}}</option>
+                <option value="pr">{{localize "RM.stats.pr"}}</option>
+                <option value="in">{{localize "RM.stats.in"}}</option>
+                <option value="em">{{localize "RM.stats.em"}}</option>
+            {{/select}}
+        </select>
+    </div>
+</div>
+<div class="form-group">
+    <label>{{localize "RM.skills.stat"}}</label>
+    <div class="cell">
+        <input class="field-value" name="system.stat" type="text" readonly="true" value="{{system.stat}}" data-dtype="String" />
+    </div>
+</div>
+<!-- ITEM BONUS -->
+<h3 class="form-header">{{localize "RM.skills.itemBonus"}}</h3>
+<div class="form-group">
+    <label>{{localize "RM.skills.itemBonus1"}}</label>
+    <div class="cell">
+        <input class="field-value" name="system.itemBonus1" type="number" value="{{system.itemBonus1}}" data-dtype="Number" />
+    </div>
+</div>
+<div class="form-group">
+    <label>{{localize "RM.skills.itemBonus2"}}</label>
+    <div class="cell">
+        <input class="field-value" name="system.itemBonus2" type="number" value="{{system.itemBonus2}}" data-dtype="Number" />
+    </div>
+</div>
+<div class="form-group">
+    <label>{{localize "RM.skills.itemBonus3"}}</label>
+    <div class="cell">
+        <input class="field-value" name="system.itemBonus3" type="number" value="{{system.itemBonus3}}" data-dtype="Number" />
+    </div>
+</div>
+<!-- SPECIAL BONUS -->
+<h3 class="form-header">{{localize "RM.skills.specialBonus"}}</h3>
+<div class="form-group">
+    <label>{{localize "RM.skills.special1"}}</label>
+    <div class="cell">
+        <input class="field-value" name="system.special1" type="number" value="{{system.special1}}" data-dtype="Number" />
+    </div>
+</div>
+<div class="form-group">
+    <label>{{localize "RM.skills.special2"}}</label>
+    <div class="cell">
+        <input class="field-value" name="system.special2" type="number" value="{{system.special2}}" data-dtype="Number" />
+    </div>
+</div>
+<div class="form-group">
+    <label>{{localize "RM.skills.special3"}}</label>
+    <div class="cell">
+        <input class="field-value" name="system.special3" type="number" value="{{system.special3}}" data-dtype="Number" />
+    </div>
+</div>

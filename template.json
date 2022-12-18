@@ -24,7 +24,8 @@
             "race": 0,
             "spec": 0,
             "total": 0,
-            "dp": 0
+            "dp": 0,
+            "dev" : true
           },
           {
             "key": "ag",
@@ -35,7 +36,8 @@
             "race": 0,
             "spec": 0,
             "total": 0,
-            "dp": 0
+            "dp": 0,
+            "dev" : true
           },{
             "key" : "sd",
             "label": "RM.stats.sd",
@@ -45,7 +47,8 @@
             "race": 0,
             "spec": 0,
             "total": 0,
-            "dp": 0
+            "dp": 0,
+            "dev" : true
           },{
             "key" : "re",
             "label": "RM.stats.re",
@@ -55,7 +58,8 @@
             "race": 0,
             "spec": 0,
             "total": 0,
-            "dp": 0
+            "dp": 0,
+            "dev" : true
           },{
             "key" : "me",
             "label": "RM.stats.me",
@@ -65,7 +69,8 @@
             "race": 0,
             "spec": 0,
             "total": 0,
-            "dp": 0
+            "dp": 0,
+            "dev" : true
           },{
             "key" : "st",
             "label": "RM.stats.st",
@@ -75,7 +80,8 @@
             "race": 0,
             "spec": 0,
             "total": 0,
-            "dp": 0
+            "dp": 0,
+            "dev" : false
           },{
             "key" : "qu",
             "label": "RM.stats.qu",
@@ -85,7 +91,8 @@
             "race": 0,
             "spec": 0,
             "total": 0,
-            "dp": 0
+            "dp": 0,
+            "dev" : false
           },{
             "key" : "pr",
             "label": "RM.stats.pr",
@@ -95,7 +102,8 @@
             "race": 0,
             "spec": 0,
             "total": 0,
-            "dp": 0
+            "dp": 0,
+            "dev" : false
           },{
             "key" : "in",
             "label": "RM.stats.in",
@@ -105,7 +113,8 @@
             "race": 0,
             "spec": 0,
             "total": 0,
-            "dp": 0
+            "dp": 0,
+            "dev" : false
           },{
             "key" : "em",
             "label": "RM.stats.em",
@@ -115,10 +124,10 @@
             "race": 0,
             "spec": 0,
             "total": 0,
-            "dp": 0
+            "dp": 0,
+            "dev" : false
           }
         ],
-        "skills": [],
         "resources": {
           "hp": {
             "current": 0,
@@ -148,55 +157,12 @@
     }
   },
   "Item": {
-    "types": ["item", "feature" ,"skill", "spellList" ],
+    "types": ["item", "background", "race", "profession" ,"skill", "spellList" ],
     "templates": {
       "base": {
         "subtype": "default",
-        "description": ""
-      }
-    },
-    "feature" : {
-      "templates": [
-        "base"
-      ],
-      "properties" : {
-        "profession": {
-          "label" : "RM.feature.profession",
-          "enabled" : false
-        },
-        "race": {
-          "label" : "RM.feature.race",
-          "enabled" : false,
-          "statBonus" : {
-            "st" : 0,
-            "qu" : 0,
-            "pr" : 0,
-            "in" : 0,
-            "em" : 0,
-            "co" : 0,
-            "ag" : 0,
-            "sd" : 0,
-            "me" : 0,
-            "re" : 0
-          },
-          "rrMod" : {
-            "essence" : 0,
-            "channeling" : 0,
-            "mentalism" : 0,
-            "poison" : 0,
-            "disease" : 0
-          },
-          "soulDeparture" : 0,
-          "statDeterioration" : 0,
-          "recoveryFactor" : 0,
-          "lang" : 0,
-          "diceType" : "-",
-          "maxHits" : 0
-        },
-        "background": {
-          "label" : "RM.feature.profession",
-          "enabled" : false
-        }
+        "description": "",
+        "properties" : {}
       }
     },
     "item" : {
@@ -237,23 +203,80 @@
         }
       }
     },
+    "profession": {
+      "label" : "RM.feature.profession",
+      "enabled" : false
+    },
+    "background": {
+      "label" : "RM.feature.profession",
+      "enabled" : false
+    },
+    "race": {
+      "label" : "RM.feature.race",
+      "enabled" : false,
+      "statBonus" : {
+        "st" : 0,
+        "qu" : 0,
+        "pr" : 0,
+        "in" : 0,
+        "em" : 0,
+        "co" : 0,
+        "ag" : 0,
+        "sd" : 0,
+        "me" : 0,
+        "re" : 0
+      },
+      "rrMod" : {
+        "essence" : 0,
+        "channeling" : 0,
+        "mentalism" : 0,
+        "poison" : 0,
+        "disease" : 0
+      },
+      "soulDeparture" : 0,
+      "statDeterioration" : 0,
+      "recoveryFactor" : 0,
+      "lang" : 0,
+      "diceType" : "-",
+      "maxHits" : 0
+    },
     "skill": {
-      "name" : "RM.skill.newSkill",
+      "templates": [
+        "base"
+      ],
+      "category" : null,
+      "stat1" : null,
+      "stat2" : null,
+      "stat3" : null,
+      "stat" : "",
       "cost1": null,
       "cost2": null,
       "star" : false,
+      "cost": "",
       "rank": 0,
       "rankBonus": -25,
       "statBonus": 0,
+      "perLevelBonus" : 0,
       "levelBonus": 0,
-      "item": 0,
+      "itemBonus1": 0,
+      "itemBonus2": 0,
+      "itemBonus3": 0,
+      "itemBonus": 0,
       "special1": 0,
       "special2": 0,
+      "special3": 0,
+      "specialBonus": 0,
       "misc": 0,
-      "total": 0
+      "total": 0,
+      "properties" : {
+        "rollable" : true,
+        "body" : false,
+        "power" : false,
+        "armor" : false,
+        "attack" : false
+      }
     },
     "spellList": {
-      "name" : "RM.spell.newSpellList",
       "level": 0,
       "chance": 0,
       "description": "",

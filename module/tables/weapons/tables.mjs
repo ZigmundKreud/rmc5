@@ -1,7 +1,7 @@
 
-export const TABLES = {};
+export const Tables = {};
 
-TABLES.weapons = {
+Tables.weapons = {
     ALT01:[
         ["F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F"],
         ["0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0"],

@@ -1,0 +1,50 @@
+<div class="flexrow">
+    <div class="flex1">
+        <h3 class="form-header">{{localize "RM.stats.label"}}</h3>
+        <div class="stats-list">
+            <div class="stats-header-row flexrow">
+                <div class="form-fields flex2">{{localize "RM.stats.abbr.label"}}</div>
+                <div class="form-fields center flex1"></div>
+                <div class="form-fields center flex1">{{localize "RM.stats.abbr.temp"}}</div>
+                <div class="form-fields center flex1">{{localize "RM.stats.abbr.potential"}}</div>
+                <div class="form-fields center flex1">{{localize "RM.stats.abbr.bonus"}}</div>
+                <div class="form-fields center flex1">{{localize "RM.stats.abbr.race"}}</div>
+                <div class="form-fields center flex1">{{localize "RM.stats.abbr.total"}}</div>
+                <div class="form-fields center flex1">{{localize "RM.stats.abbr.dp"}}</div>
+            </div>
+            {{#if stats}}
+                {{#each stats as |stat id|}}
+                    {{log "stat" stat id}}
+                    <div class="stat flexrow">
+                        <div class="stat-name form-fields flex2">{{localize stat.label}}
+                            <input class="field-value" name="system.stats.{{id}}.label" type="hidden" value="{{stat.label}}" data-dtype="String" />
+                        </div>
+                        <div class="stat-abbr form-fields flex1">({{localize (concat "RM.stats.abbr." stat.key)}})
+                            <input class="field-value" name="system.stats.{{id}}.key" type="hidden" value="{{stat.key}}" data-dtype="String" />
+                        </div>
+                        <div class="stat-temp form-fields center flex1">
+                            <input class="field-value" name="system.stats.{{id}}.temp" type="number" value="{{stat.temp}}" data-dtype="Number" />
+                        </div>
+                        <div class="stat-potential form-fields center flex1">
+                            <input class="field-value" name="system.stats.{{id}}.potential" type="number" value="{{stat.potential}}" data-dtype="Number" />
+                        </div>
+                        <div class="stat-bonus form-fields center flex1">
+                            <input class="field-value" name="system.stats.{{id}}.bonus" type="number" readonly value="{{stat.bonus}}" data-dtype="Number" />
+                        </div>
+                        <div class="stat-race form-fields center flex1">
+                            <input class="field-value" name="system.stats.{{id}}.race" type="number" readonly value="{{stat.race}}" data-dtype="Number" />
+                        </div>
+                        <div class="stat-total form-fields center flex1">
+                            <input class="field-value" name="system.stats.{{id}}.total" type="number" readonly value="{{stat.total}}" data-dtype="Number" />
+                        </div>
+                        <div class="stat-dp form-fields center flex1">
+                            <input class="field-value" name="system.stats.{{id}}.dev" type="checkbox" readonly {{#if stat.dev}}checked{{/if}} data-dtype="Boolean" style="display:none"/>
+                            {{#if stat.dev}}<input class="field-value" name="system.stats.{{id}}.dp" type="number" readonly value="{{stat.dp}}" data-dtype="Number" />{{/if}}
+                        </div>
+                    </div>
+                {{/each}}
+            {{/if}}
+        </div>
+    </div>
+    <div class="flex1"></div>
+</div>

@@ -1,0 +1,54 @@
+Skills	Stats	Champion	Elemental	Warrior	Venturer	Priest	Mage	Mentat
+Maneuvering	in	Armor
+Soft	Leather	Ag/St	2/*	3/*	2/*	2/*	9	4/*
+Rigid	Leather	Ag/St	3/*	4/*	2/*	3/*	9	5/*
+Chain	Ag/St	4/*	5/*	3/*	10	10	6/*
+Plate	Ag/St	5/*	6/*	4/*	11	11	7/*
+Weapon	Skills*
+One-Handed	Edged**	St/St/Ag	3/5	3/5	3/5	6	9	6
+One-Handed	Crushing**	St/St/Ag	3/8	3/9	3/8	7	20	8
+Two-Handed**	St/St/Ag	5	6	4	9	20	15
+Missile**	Ag/Ag/St	7	8	6	9	20	20
+Thrown**	Ag/Ag/St	9	15	8	9	20	20
+Pole	Arms**	St/St/Ag	15	15	15	20	20	20
+General	Skills
+Climbing	Ag	3/8	3/9	3/7	5	7	5
+Swimming	Ag	2/6	2/6	2/6	3	3	3
+Riding**	Em/Ag	1/5	2/6	2/6	3	3	2
+Disarm	Traps	In/Ag	6	8	4	8	7	7
+Pick	Locks	In/Ag	8	8	4	8	8	8
+Stalk	&	Hide	Ag	or	SD	3/7	2/7	2/6	5	5	5
+Perception	In/Re	2/7	2/7	2/6	3	3	3
+Magical	Skills
+Spell	Lists**	Em	or	In	4/*	4/*	4/*	2/*	2/*	2/*
+Runes	Em/In	4	3	4	2/6	1/4	2/5
+Staves	&	Wands	Em/In	6	5	6	2/6	1/4	2/5
+Directed	Spells**	Ag	6	3/6	6	3/8	2/6	2/6
+Special	Skills
+Ambush	—	9	6	3	8	8	9
+Linguistics**	—	3/*	3/*	3/*	2/*	2/*	2/*
+Adrenal	Moves**	Pr/SD	2/7	2/7	2/6	5	6	6
+Adrenal	Defense	—	20	20	8	20	20	20
+Martial	Arts	**	varies	3/8	3	2/7	6	9	3
+Body	Development	Co	2/7	2/7	2/7	5	8	6
+Secondary	Skills
+Acrobatics	Ag/Qu	2/6	2/6	2/4	2/7	3	3/7
+Acting	Pr/Em	2/6	2/6	2/6	2/7	3/6	2/6
+Crafting**	Ag/Em	2/6	2/6	2/6	3	3	3
+Diplomacy	Pr/In	2/6	2/5	2/5	2/6	2/5	2/4
+Duping	Pr/Em	2/6	3/6	2/5	3/6	3/6	3/5
+First	Aid	SD/Em	2/4	2/4	2/4	1/4	2/6	2/6
+Foraging	In/Me	2/5	2/6	2/5	2/5	2/6	2/6
+Frenzy	Em/SD	2/6	2/6	2/6	3	5	2/4
+Herbalism	In/Re	3/6	3/6	2/6	2/4	3/8	2/6
+Lore:	General**	Me/Re	1/3	1/3	1/3	1/3	1/3	1/3
+Lore:	Magical**	Me/Re	2/4	2/4	2/4	2/5	1/4	2/4
+Lore:	Obscure**	Me/Re	2/6	2/6	2/6	3/7	3/7	3/7
+Meditation	Pr/SD	2/5	2/6	1/3	1/3	2/6	1/4
+Music	Ag/Em	2/6	2/6	2/6	2/6	2/6	2/6
+Navigation	Re/In	2/5	2/6	2/4	2/4	2/6	2/6
+Singing	Pr/In	2/6	2/6	2/6	2/6	2/6	2/6
+Streetwise	In/Pr	2/6	2/6	2/6	3	3	3
+Tracking	In/Re	2/4	2/4	2/4	2/7	3	3
+Trading	Re/Em	2/4	2/4	2/4	2/6	3/5	3/5
+Trickery	Pr/Qu	2/6	2/4	2/6	3	3	3

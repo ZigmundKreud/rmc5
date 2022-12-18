@@ -1,6 +1,8 @@
-input[readonly="true"] {
+@colorOlive: #4b4a44;
+
+input[readonly="true"]{
   border: none;
-  color: dimgray;
+  color:dimgray;
   cursor: not-allowed;
   width: 100%;
   vertical-align: middle;
@@ -17,8 +19,6 @@ input[type="text"]:hover,
 input[type="number"]:hover,
 input[type="text"]:focus,
 input[type="number"]:focus {
-  //border: 1px solid #111;
-  //box-shadow: 0 0 8px #26641c;
   border-radius: 0;
   border: none;
   box-shadow: none;
@@ -27,7 +27,7 @@ input[type="number"]:focus {
 input:disabled,
 select:disabled,
 textarea:disabled {
-  //color: $colorOlive;
+  color: @colorOlive;
 }
 
 input:disabled:hover,
@@ -43,31 +43,21 @@ textarea:disabled:focus {
 
 button {
   background: rgba(0, 0, 0, 0.1);
-  //border: $borderGroove;
+  border: @borderGroove;
 }
 
 select {
-  //-webkit-appearance: none;
-  //-moz-appearance: none;
-  //color: $c-black;
-  //color: $colorDark;
-  //font-family: $font-primary;
+  color: @colorDark;
+  font-family: @font-primary;
   font-size: 14px;
   text-align: center;
   text-align-last: center;
   -moz-text-align-last: center;
   width: 100%;
-  border: none;
-  border-radius: 0;
-
-  //  height: calc(100% - 2px);
-  //  //border: 1px solid $colorTan;
-  //  background: rgba(0, 0, 0, 0.05);
-  //  border-radius: 0;
-  //  border: none;
-  //  box-shadow: none;
-  //  color: $colorDark;
+  border:none;
+  border-radius:0;
 }
+
 
 
 label.checkbox {
@@ -92,14 +82,12 @@ label.checkbox {
 }
 
 /* Form Groups */
-
 .form-group {
   label {
     flex: 2;
-    //color: $colorOlive;
+    color: @colorOlive;
     font-weight: bold;
   }
-
   .form-fields {
     display: flex;
     flex-direction: row;
@@ -109,32 +97,17 @@ label.checkbox {
     > * {
       flex: 1;
       margin: 0 3px 0 0;
+      &:last-child { margin-right: 0; }
 
-      &:last-child {
-        margin-right: 0;
-      }
-
-      .flex1 {
-        flex: 1;
-      }
-
-      .flex2 {
-        flex: 2;
-      }
-
-      .flex3 {
-        flex: 3;
-      }
-
-      .flex4 {
-        flex: 4;
-      }
+      .flex1 { flex: 1; }
+      .flex2 { flex: 2; }
+      .flex3 { flex: 3; }
+      .flex4 { flex: 4; }
     }
 
     label {
       flex: 0 0 100%;
       margin: 0;
-
       &.checkbox {
         flex: auto;
         text-align: left;
@@ -148,7 +121,6 @@ label.checkbox {
     label {
       flex: 0 0 100%;
       margin: 0;
-
       &.checkbox {
         flex: auto;
         text-align: left;
@@ -160,9 +132,9 @@ label.checkbox {
 .form-header {
   margin: 0 0 0.25em 0;
   padding: 2px 0;
-  //border-top: $borderGroove;
-  //border-bottom: $borderGroove;
-  //font-family: $font-tertiary;
+  border-top: @borderGroove;
+  border-bottom: @borderGroove;
+  font-family: @font-tertiary;
   font-size: 20px;
   font-weight: 700;
 }
@@ -177,6 +149,7 @@ label.checkbox {
   border-radius: 3px;
   background: rgba(0, 0, 0, 0.05);
 }
+
 
 /*
  Placeholders

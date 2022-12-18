@@ -1,0 +1,39 @@
+<h3 class="form-header">{{localize "RM.skills.label"}}</h3>
+<div class="skills-list">
+    <div class="skills-header flexrow no-wrap">
+        <div class="form-fields flex2">{{localize "RM.skills.abbr.name"}}</div>
+        <div class="form-fields center flex1">{{localize "RM.skills.abbr.stat"}}</div>
+        <div class="form-fields center flex1">{{localize "RM.skills.abbr.cost"}}</div>
+        <div class="form-fields center skill-rank">{{localize "RM.skills.abbr.rank"}}</div>
+        <div class="form-fields center flex1">{{localize "RM.skills.abbr.rankBonus"}}</div>
+        <div class="form-fields center flex1">{{localize "RM.skills.abbr.statBonus"}}</div>
+        <div class="form-fields center flex1">{{localize "RM.skills.abbr.levelBonus"}}</div>
+        <div class="form-fields center flex1">{{localize "RM.skills.abbr.itemBonus"}}</div>
+        <div class="form-fields center flex1">{{localize "RM.skills.abbr.specialBonus"}}</div>
+        <div class="form-fields center flex1">{{localize "RM.skills.abbr.misc"}}</div>
+        <div class="form-fields center flex1">{{localize "RM.skills.abbr.total"}}</div>
+        <div class="form-fields center flex1"></div>
+    </div>
+    {{#if skills}}
+    {{#each skills as |skill id|}}
+        {{log "skill" skill id }}
+        <div class="skill item flexrow no-wrap" data-item-id="{{skill._id}}" data-index="{{id}}">
+            <div class="form-fields skill-name flex2"><a class="skill-roll">{{skill.name}}</a></div>
+            <div class="form-fields skill-stat center flex1">{{skill.system.stat}}</div>
+            <div class="form-fields skill-cost center flex1">{{skill.system.cost}}</div>
+            <div class="form-fields skill-rank"><div class="ranks">{{{rankdisplay skill.system.rank}}}</div></div>
+            <div class="form-fields skill-rankBonus center flex1">{{skill.system.rankBonus}}</div>
+            <div class="form-fields skill-statBonus center flex1">{{skill.system.statBonus}}</div>
+            <div class="form-fields skill-levelBonus center flex1">{{skill.system.levelBonus}}</div>
+            <div class="form-fields skill-itemBonus center flex1">{{skill.system.itemBonus}}</div>
+            <div class="form-fields skill-specialBonus center flex1">{{skill.system.specialBonus}}</div>
+            <div class="form-fields skill-misc center flex1">{{skill.system.misc}}</div>
+            <div class="form-fields skill-total center flex1">{{skill.system.total}}</div>
+            <div class="form-fields skill-actions right flex1">
+                <a class="item-edit"><i class="fas fa-edit"></i></a>
+                <a class="item-delete"><i class="fas fa-trash"></i></a>
+            </div>
+        </div>
+    {{/each}}
+    {{/if}}
+</div>

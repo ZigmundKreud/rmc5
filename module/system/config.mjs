@@ -34,3 +34,24 @@ RM.newSkill = {
     "misc": 0,
     "total": 0
 };
+
+
+RM.itemTypes = {
+    ITEM : "item",
+    EQUIPMENT: "equipment",
+    SKILL : "skill",
+    SPELL_LIST : "spellList",
+    SPELL : "spell"
+};
+
+RM.skillCategories = {
+    ARMOR : "armor",
+    WEAPON: "weapon",
+    GENERAL : "general",
+    MAGICAL : "magical",
+    SPECIAL : "special",
+    SECONDARY : "secondary",
+    BODY_DEV : "body",
+    POWER_DEV : "power",
+    SPELL_MASTERY : "spellm"
+};
