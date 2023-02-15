@@ -1,31 +1,35 @@
 {
-  "name": "rmc5",
   "title": "Rolemaster Classic 5.0",
   "description": "Rolemaster Classic 5.0 system for Foundry VTT",
   "version": "1.0.0",
   "compatibility": {
-    "minimum": 10,
+    "minimum": "10",
     "verified": "10.290"
   },
   "authors": [
     {
-      "name": "Zigmund"
+      "name": "Zigmund",
+      "flags": {}
     }
   ],
-  "esmodules": ["module/rmc5.mjs"],
-  "styles": ["css/rmc5.css"],
-  "scripts": [],
-  "packs": [],
+  "esmodules": [
+    "module/rmc5.mjs"
+  ],
+  "styles": [
+    "css/rmc5.css"
+  ],
   "languages": [
     {
       "lang": "fr",
       "name": "French",
-      "path": "lang/fr.json"
+      "path": "lang/fr.json",
+      "flags": {}
     },
     {
       "lang": "en",
       "name": "English",
-      "path": "lang/en.json"
+      "path": "lang/en.json",
+      "flags": {}
     }
   ],
   "gridDistance": 1.5,
@@ -35,5 +39,6 @@
   "url": "https://github.com/ZigmundKreud/rmc5",
   "manifest": "https://raw.githubusercontent.com/ZigmundKreud/rmc5/main/system.json",
   "download": "https://github.com/ZigmundKreud/rmc5/archive/refs/heads/main.zip",
-  "license": "LICENSE"
+  "license": "LICENSE",
+  "id": "rmc5"
 }
